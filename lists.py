@@ -33,5 +33,24 @@ print(f"ilk iki kitap: {books[2:]}")
 print(f"Tersine çevir: {books[::-1]}")
 print(f"Gözlem:: {books[::2]}")
 
+books.remove('Sefiller')
 
+
+# iki haneli bir sayının okunuşu:
+# 34 -> otuz dört
+
+ones = ["","bir","iki","üç","dört","beş","altı","yedi","sekiz","dokuz"]
+tens = ["","on","yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
+
+number = int(input('Lütfen iki basamaklı bir sayı girin:'))
+if number < 0 or number>99:
+    print("Sayı 0 ile 99 arasında olmalı ")
+else:
+    oneValue = number % 10
+    tenValue = number // 10
+    print('sonuc: ',tens[tenValue], ones[oneValue])
+
+
+
+    
 
