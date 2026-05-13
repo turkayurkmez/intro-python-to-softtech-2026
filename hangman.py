@@ -80,14 +80,14 @@ def adam_asmaca():
          print("yanlış tahmin")
         
       if all( harf in tahmin_edilen_harfler for harf in kelime):
-         print("Tüm kelimryi bildiniz")
+         print("Tüm kelimeyi bildiniz")
          break
    else:
       print("Üzgünüm. kelimeyi bilemediniz. Doğrusu",kelime)
       
-      #while/else eğer break ile çıkılmamış ise else bloğuna düşer..
-
+     #while/else eğer break ile çıkılmamış ise else bloğuna düşer..
+   
    if yeniden_oynansin_mi():
        adam_asmaca()
 
-
+adam_asmaca()
