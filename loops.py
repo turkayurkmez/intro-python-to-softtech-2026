@@ -12,7 +12,11 @@ print("Çalışan kaydı başlıyor. Çıkmak için q'ya yazınız")
 
 #4. tamamı doğru bir biçimde doldurulduğunda çalışanlar list'ine eklenecek.
 while True:
-    ad = input("Ad ve Soyadı giriniz (çıkmak için 'q')")
+    while True:
+        ad = input("Ad ve Soyadı giriniz (çıkmak için 'q')")
+        if ad != "":
+            break
+
     if ad.lower() == 'q':
         break
     while True:
